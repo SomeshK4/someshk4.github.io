@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somesh Kumar - Sr. Software Architect</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Somesh Kumar - Sr. Software Architect</title>
+<style>
         * {
             margin: 0;
             padding: 0;
@@ -664,171 +665,248 @@
             .timeline-item { margin-left: 1rem; }
         }
     </style>
+
+<style>
+  /* === Responsive Fixes for Mobile Screens === */
+  @media (max-width: 768px) {
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+    }
+
+    .stats-grid {
+      grid-template-columns: 1fr !important;
+    }
+
+    .timeline {
+      padding-left: 0;
+    }
+
+    .timeline::before {
+      left: 20px;
+    }
+
+    .timeline-item {
+      width: 100% !important;
+      left: 0 !important;
+      padding-left: 2.5rem;
+      margin-left: 0 !important;
+    }
+
+    .timeline-item::before {
+      left: -1.5rem !important;
+      right: auto !important;
+    }
+
+    .projects-grid {
+      grid-template-columns: 1fr !important;
+    }
+
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .skills-grid {
+      grid-template-columns: 1fr !important;
+    }
+
+    .section {
+      padding: 60px 16px !important;
+    }
+
+    .hero h1 {
+      font-size: 2.2rem !important;
+    }
+
+    .hero .subtitle {
+      font-size: 1.1rem !important;
+    }
+
+    .contact-links {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .skill-icon {
+      width: 60px;
+      height: 60px;
+      font-size: 1.5rem;
+    }
+
+    .cta-btn {
+      padding: 12px 24px;
+      font-size: 0.95rem;
+    }
+  }
+</style>
 </head>
 <body>
 <nav id="navbar">
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
-
-<section id="home" class="hero">
-    <div class="hero-content">
-        <h1>Somesh Kumar</h1>
-        <p class="subtitle">Senior Software Architect & Java Expert</p>
-        <a href="#about" class="cta-btn">Explore My Work</a>
-    </div>
+<section class="hero" id="home">
+<div class="hero-content">
+<h1>Somesh Kumar</h1>
+<p class="subtitle">Senior Software Architect &amp; Java Expert</p>
+<a class="cta-btn" href="#about">Explore My Work</a>
+</div>
 </section>
-
 <div class="container">
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="profile-img"></div>
-            <div class="about-text">
-                <p>I'm a passionate Senior Software Architect with over 14 years of experience designing and building scalable enterprise applications using Java and cutting-edge technologies. My expertise spans microservices architecture, and leading high-performance development teams.</p>
-                <br>
-                <p>I specialize in transforming complex business requirements into elegant, maintainable software solutions. My approach combines deep technical knowledge with strong leadership skills to deliver projects that exceed expectations and drive business success.</p>
-                <br>
-                <p>When I'm not architecting solutions, you'll find me mentoring junior developers or exploring the latest trends in software engineering.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <h2>Technical Expertise</h2>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-icon">☕</div>
-                <h3>Java Ecosystem</h3>
-                <p>Java 17+, Spring Boot, Spring Cloud, Hibernate, Maven, Gradle</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">🏗️</div>
-                <h3>Architecture</h3>
-                <p>Microservices, Domain-Driven Design, Event-Driven Architecture, CQRS</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">☁️</div>
-                <h3>Cloud Platforms</h3>
-                <p>AWS, Azure, Docker, Kubernetes, CI/CD</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">🗄️</div>
-                <h3>Databases</h3>
-                <p>PostgreSQL, MongoDB, Redis, Elasticsearch</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">🔧</div>
-                <h3>DevOps</h3>
-                <p>Jenkins, GitLab CI, Prometheus, Grafana, ELK Stack</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">📬</div>
-                <h3>Messaging Systems</h3>
-                <p>Apache Kafka, IBM MQ, ActiveMQ</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">👥</div>
-                <h3>Leadership</h3>
-                <p>Team Management, Agile/Scrum, Technical Mentoring, Code Reviews</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <h2>Professional Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-date">2019 - Present</div>
-                <h3 class="timeline-title">Senior Software Architect</h3>
-                <div class="timeline-company">TietoEvry Sweden AB</div>
-                <p>Leading the architecture and development of cloud-native applications. Designed microservices architecture.</p>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2018 - 2019</div>
-                <h3 class="timeline-title">Technical Lead</h3>
-                <div class="timeline-company">FIS</div>
-                <p>Spearheaded the migration from monolithic to microservices architecture. Implemented event-driven systems using Apache Kafka.</p>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2016 - 2018</div>
-                <h3 class="timeline-title">Senior Java Developer</h3>
-                <div class="timeline-company">BL Information System Pvt. Ltd</div>
-                <p>Developed high-performance accounting systems. Optimized database queries resulting in 60% performance improvement.</p>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2015 - 2016</div>
-                <h3 class="timeline-title">Senior Java Developer</h3>
-                <div class="timeline-company">Span Systems</div>
-                <p>Built RESTful APIs and web applications using Spring Framework. Collaborated with cross-functional teams to deliver customer-facing features. Gained experience in agile development methodologies and TDD practices.</p>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">2010 - 2015</div>
-                <h3 class="timeline-title">Java Developer</h3>
-                <div class="timeline-company">Bursys Infotech</div>
-                <p>Contributed to the development of diverse web applications as a Java Developer. Gained hands-on experience with full-stack technologies, collaborated with teams across modules, and followed agile practices to deliver functional features.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-header">🚀</div>
-                <div class="project-content">
-                    <h3 class="project-title">Netsort</h3>
-                    <p>Architected and built a mail sorting system. Implemented distributed caching for optimal performance.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Java 17</span>
-                        <span class="tech-tag">Spring Boot</span>
-                        <span class="tech-tag">Kafka</span>
-                        <span class="tech-tag">Redis</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Docker</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-header">💰</div>
-                <div class="project-content">
-                    <h3 class="project-title">VBM (Vote By Mail)</h3>
-                    <p>Designed ultra-low latency Swing application.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Java 8</span>
-                        <span class="tech-tag">EhCache</span>
-                        <span class="tech-tag">REST</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <h2>Let's Connect</h2>
-        <div class="contact-content">
-            <p>I'm always interested in discussing new opportunities, innovative projects, or sharing insights about software architecture and Java development.</p>
-            <div class="contact-links">
-                <a href="mailto:someshk4@gmail.com" class="contact-link">
+<section class="section" id="about">
+<h2>About Me</h2>
+<div class="about-content">
+<div class="profile-img"></div>
+<div class="about-text">
+<p>I'm a passionate Senior Software Architect with over 14 years of experience designing and building scalable enterprise applications using Java and cutting-edge technologies. My expertise spans microservices architecture, and leading high-performance development teams.</p>
+<br/>
+<p>I specialize in transforming complex business requirements into elegant, maintainable software solutions. My approach combines deep technical knowledge with strong leadership skills to deliver projects that exceed expectations and drive business success.</p>
+<br/>
+<p>When I'm not architecting solutions, you'll find me mentoring junior developers or exploring the latest trends in software engineering.</p>
+</div>
+</div>
+</section>
+<section class="section" id="skills">
+<h2>Technical Expertise</h2>
+<div class="skills-grid">
+<div class="skill-card">
+<div class="skill-icon">☕</div>
+<h3>Java Ecosystem</h3>
+<p>Java 17+, Spring Boot, Spring Cloud, Hibernate, Maven, Gradle</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon">🏗️</div>
+<h3>Architecture</h3>
+<p>Microservices, Domain-Driven Design, Event-Driven Architecture, CQRS</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon">☁️</div>
+<h3>Cloud Platforms</h3>
+<p>AWS, Azure, Docker, Kubernetes, CI/CD</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon">🗄️</div>
+<h3>Databases</h3>
+<p>PostgreSQL, MongoDB, Redis, Elasticsearch</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon">🔧</div>
+<h3>DevOps</h3>
+<p>Jenkins, GitLab CI, Prometheus, Grafana, ELK Stack</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon">📬</div>
+<h3>Messaging Systems</h3>
+<p>Apache Kafka, IBM MQ, ActiveMQ</p>
+</div>
+<div class="skill-card">
+<div class="skill-icon">👥</div>
+<h3>Leadership</h3>
+<p>Team Management, Agile/Scrum, Technical Mentoring, Code Reviews</p>
+</div>
+</div>
+</section>
+<section class="section" id="experience">
+<h2>Professional Experience</h2>
+<div class="timeline">
+<div class="timeline-item">
+<div class="timeline-date">2019 - Present</div>
+<h3 class="timeline-title">Senior Software Architect</h3>
+<div class="timeline-company">TietoEvry Sweden AB</div>
+<p>Leading the architecture and development of cloud-native applications. Designed microservices architecture.</p>
+</div>
+<div class="timeline-item">
+<div class="timeline-date">2018 - 2019</div>
+<h3 class="timeline-title">Technical Lead</h3>
+<div class="timeline-company">FIS</div>
+<p>Spearheaded the migration from monolithic to microservices architecture. Implemented event-driven systems using Apache Kafka.</p>
+</div>
+<div class="timeline-item">
+<div class="timeline-date">2016 - 2018</div>
+<h3 class="timeline-title">Senior Java Developer</h3>
+<div class="timeline-company">BL Information System Pvt. Ltd</div>
+<p>Developed high-performance accounting systems. Optimized database queries resulting in 60% performance improvement.</p>
+</div>
+<div class="timeline-item">
+<div class="timeline-date">2015 - 2016</div>
+<h3 class="timeline-title">Senior Java Developer</h3>
+<div class="timeline-company">Span Systems</div>
+<p>Built RESTful APIs and web applications using Spring Framework. Collaborated with cross-functional teams to deliver customer-facing features. Gained experience in agile development methodologies and TDD practices.</p>
+</div>
+<div class="timeline-item">
+<div class="timeline-date">2010 - 2015</div>
+<h3 class="timeline-title">Java Developer</h3>
+<div class="timeline-company">Bursys Infotech</div>
+<p>Contributed to the development of diverse web applications as a Java Developer. Gained hands-on experience with full-stack technologies, collaborated with teams across modules, and followed agile practices to deliver functional features.</p>
+</div>
+</div>
+</section>
+<section class="section" id="projects">
+<h2>Featured Projects</h2>
+<div class="projects-grid">
+<div class="project-card">
+<div class="project-header">🚀</div>
+<div class="project-content">
+<h3 class="project-title">Netsort</h3>
+<p>Architected and built a mail sorting system. Implemented distributed caching for optimal performance.</p>
+<div class="project-tech">
+<span class="tech-tag">Java 17</span>
+<span class="tech-tag">Spring Boot</span>
+<span class="tech-tag">Kafka</span>
+<span class="tech-tag">Redis</span>
+<span class="tech-tag">PostgreSQL</span>
+<span class="tech-tag">Docker</span>
+</div>
+</div>
+</div>
+<div class="project-card">
+<div class="project-header">💰</div>
+<div class="project-content">
+<h3 class="project-title">VBM (Vote By Mail)</h3>
+<p>Designed ultra-low latency Swing application.</p>
+<div class="project-tech">
+<span class="tech-tag">Java 8</span>
+<span class="tech-tag">EhCache</span>
+<span class="tech-tag">REST</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="contact">
+<h2>Let's Connect</h2>
+<div class="contact-content">
+<p>I'm always interested in discussing new opportunities, innovative projects, or sharing insights about software architecture and Java development.</p>
+<div class="contact-links">
+<a class="contact-link" href="mailto:someshk4@gmail.com">
                     📧 Email Me
                 </a>
-                <a href="https://linkedin.com/in/someshkumar4" class="contact-link">
+<a class="contact-link" href="https://linkedin.com/in/someshkumar4">
                     💼 LinkedIn
                 </a>
-                <a href="https://github.com/someshk4" class="contact-link">
+<a class="contact-link" href="https://github.com/someshk4">
                     🐙 GitHub
                 </a>
-            </div>
-        </div>
-    </section>
 </div>
-
+</div>
+</section>
+</div>
 <script>
     // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -915,5 +993,51 @@
     // Start typing effect after page load
     setTimeout(typeEffect, 2000);
 </script>
+<button id="themeToggle" style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; background: var(--accent-color); color: white; border: none; border-radius: 30px; padding: 10px 20px; cursor: pointer; font-weight: 600;">
+  Toggle Theme
+</button>
 </body>
+<style>
+  [data-theme="dark"] {
+    --surface: #1e1e2f;
+    --surface-elevated: #2a2a40;
+    --text-primary: #e2e8f0;
+    --text-secondary: #a0aec0;
+    background-color: #0f0f23;
+  }
+
+  [data-theme="dark"] nav,
+  [data-theme="dark"] .project-card,
+  [data-theme="dark"] .skill-card,
+  [data-theme="dark"] .timeline-item,
+  [data-theme="dark"] .section {
+    background-color: var(--surface-elevated) !important;
+  }
+
+  [data-theme="dark"] .section h2,
+  [data-theme="dark"] .timeline-title,
+  [data-theme="dark"] .project-title,
+  [data-theme="dark"] .skill-card h3,
+  [data-theme="dark"] .about-text {
+    color: var(--text-primary) !important;
+  }
+
+  [data-theme="dark"] .timeline-company,
+  [data-theme="dark"] .project-content p,
+  [data-theme="dark"] .skill-card p {
+    color: var(--text-secondary) !important;
+  }
+</style>
+<script>
+  const toggleBtn = document.getElementById('themeToggle');
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const currentTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', currentTheme);
+
+  toggleBtn.addEventListener('click', () => {
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  });
+</script>
 </html>
