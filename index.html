@@ -220,20 +220,18 @@
         }
 
         .profile-container {
-            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
         }
 
         .profile-img {
-            display: block;
-            margin: 0 auto;
-            width: 350px;
-            height: 350px;
+            max-width: 350px;
+            width: 100%;
+            height: auto;
             border-radius: 24px;
-            background: url('https://gravatar.com/userimage/232022012/5cf8d4a2cd900dcf2bc2035bc8403c8c.jpeg?size=500&w=500&h=500&fit=crop&crop=face') center/cover;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            display: block;
         }
 
         .profile-img::before {
@@ -804,7 +802,14 @@
     <section class="section" id="about">
         <h2>About Me</h2>
         <div class="about-content">
-            <div class="profile-img"></div>
+            <div class="profile-container">
+                <img
+                        class="profile-img"
+                        src="https://gravatar.com/userimage/232022012/5cf8d4a2cd900dcf2bc2035bc8403c8c.jpeg?size=500&w=500&h=500&fit=crop&crop=face"
+                        alt="Somesh Kumar Profile Picture"
+                />
+            </div>
+
             <div class="about-text">
                 <p>Hi, I’m Somesh Kumar — a Senior Software Architect with over 14 years of experience crafting
                     scalable,
